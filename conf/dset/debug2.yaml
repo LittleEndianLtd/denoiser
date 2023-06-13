@@ -1,0 +1,8 @@
+dset:
+  train: egs/debug2/tr
+  valid: egs/debug2/tr
+  test: egs/debug2/tr
+  noisy_json: egs/debug2/tr/noisy.json
+  noisy_dir:
+  matching: sort
+eval_every: 2

@@ -1,10 +1,10 @@
 defaults:
-  - dset: debug
+  - dset: debug2
   - hydra/job_logging: colorlog
   - hydra/hydra_logging: colorlog
 
 # Dataset related
-sample_rate: 16000
+sample_rate: 48000
 segment: 4
 stride: 1    # in seconds, how much to stride between training examples
 pad: true   # if training sample is too short, pad it
@@ -30,7 +30,7 @@ continue_from: '' # Path the a checkpoint.th file to start from.
                   # so use a dummy=something not to mixup experiments.
 continue_best: false  # continue from best, not last state if continue_from is set.
 continue_pretrained:   # use either dns48, dns64 or master64 to fine tune from pretrained-model
-restart: false # Ignore existing checkpoints
+restart: true # Ignore existing checkpoints
 checkpoint_file: checkpoint.th
 best_file: best.th  # will contain only best model at any point
 history_file: history.json
@@ -55,8 +55,8 @@ loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
-epochs: 500
-batch_size: 64
+epochs: 5 # 500
+batch_size: 8 # 64
 
 # Models
 model: demucs # either demucs or dwave
