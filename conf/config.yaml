@@ -30,7 +30,7 @@ continue_from: '' # Path the a checkpoint.th file to start from.
                   # so use a dummy=something not to mixup experiments.
 continue_best: false  # continue from best, not last state if continue_from is set.
 continue_pretrained:   # use either dns48, dns64 or master64 to fine tune from pretrained-model
-restart: false # Ignore existing checkpoints
+restart: true # Ignore existing checkpoints
 checkpoint_file: checkpoint.th
 best_file: best.th  # will contain only best model at any point
 history_file: history.json
@@ -55,8 +55,8 @@ loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
-epochs: 500
-batch_size: 64
+epochs: 5
+batch_size: 8
 
 # Models
 model: demucs # either demucs or dwave
