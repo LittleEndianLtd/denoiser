@@ -1,7 +1,7 @@
 dset:
   train: egs/ec2work/train
-  valid: egs/ec2work/validate
-  test: egs/ec2work/test
+  valid:
+  test:
   noisy_json: egs/ec2work/train/noisy.json
   noisy_dir:
   matching: sort
