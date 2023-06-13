@@ -1,0 +1,9 @@
+dset:
+  train: egs/ec2work/train
+  valid: egs/ec2work/validate
+  test: egs/ec2work/test
+  noisy_json: egs/ec2work/train/noisy.json
+  noisy_dir:
+  matching: sort
+eval_every: 2
+pesq: 1
