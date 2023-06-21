@@ -55,7 +55,7 @@ loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
-epochs: 50
+epochs: 2
 batch_size: 8
 
 # Models

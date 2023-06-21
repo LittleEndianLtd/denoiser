@@ -2,7 +2,7 @@ dset:
   train: egs/whitenoise/train
   valid: egs/whitenoise/valid
   test: egs/whitenoise/test
-  noisy_json: egs/whitenoise/train/noisy.json
+  noisy_json: egs/whitenoise/valid/noisy.json
   noisy_dir:
   matching: sort
 eval_every: 5
