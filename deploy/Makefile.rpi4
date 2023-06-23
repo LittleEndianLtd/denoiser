@@ -1,0 +1,8 @@
+CC = g++
+CFLAGS = -Wall -g
+
+main: main.o
+	$(CC) $(CFLAGS) -o main main.o -ltorch_cpu -lc10 -L/usr/local/lib/python3.10/dist-packages/torch/lib
+
+main.o:
+	$(CC) $(CFLAGS) -c src/main.cpp -I/usr/local/lib/python3.10/dist-packages/torch/include
